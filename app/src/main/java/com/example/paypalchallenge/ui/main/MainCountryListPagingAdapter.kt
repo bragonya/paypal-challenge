@@ -40,6 +40,8 @@ class MainCountryListPagingAdapter(
             Picasso.with(view.context).load(country.image)
                 .placeholder(view.context.getDrawable(R.drawable.earthl_animation))
                 .into(countryImage)
+
+            Log.d("bragonya", "fetching: ${country.image}")
         }
     }
 

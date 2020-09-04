@@ -8,5 +8,5 @@ data class Country(
     val name: String,
     val code: String
 ){
-    val image = BASE_IMAGE_URL.replace("{country_code}", code)
+    val image = BASE_IMAGE_URL.replace("{country_code}", code.toLowerCase())
 }
