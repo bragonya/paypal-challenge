@@ -1,6 +1,5 @@
 package com.bragonya.daggerdemo.ui.mainlist
 
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
@@ -40,8 +39,6 @@ class MainCountryListPagingAdapter(
             Picasso.with(view.context).load(country.image)
                 .placeholder(view.context.getDrawable(R.drawable.earthl_animation))
                 .into(countryImage)
-
-            Log.d("bragonya", "fetching: ${country.image}")
         }
     }
 
