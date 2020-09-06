@@ -8,6 +8,14 @@ import com.squareup.moshi.JsonDataException
 import retrofit2.HttpException
 import java.io.IOException
 
+/**
+ * Paging source handle generation of pages for the MainCountryListPagingAdapter
+ * @see com.bragonya.daggerdemo.ui.mainlist.MainCountryListPagingAdapter
+ * currently we are getting batches of 10 entries
+ *
+ * @author Brayan Yaquián
+ *
+ * */
 class CountryPagingSource(
     private val service: MobileXoomAPI
 ): PagingSource<Int, Country>() {

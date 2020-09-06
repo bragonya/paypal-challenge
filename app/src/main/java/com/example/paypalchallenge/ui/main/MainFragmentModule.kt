@@ -7,6 +7,13 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityRetainedComponent
 
+/**
+ * This module needs to be installed on ActivityRetainedComponent since it has a ViewModel
+ * and it needs to survive in rotations
+ *
+ * @author Brayan Yaquián
+ *
+ * */
 @Module
 @InstallIn(ActivityRetainedComponent::class)
 class MainFragmentModule {

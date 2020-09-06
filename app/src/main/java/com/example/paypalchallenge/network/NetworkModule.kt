@@ -9,6 +9,15 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
+/**
+ * This component is used for network purposes
+ * it is placed in the application component since
+ * it can be injected on any other modules where
+ * it is needed
+ *
+ * @author Brayan Yaquián
+ *
+ * */
 @Module
 @InstallIn(ApplicationComponent::class)
 class NetworkModule {
